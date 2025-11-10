@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-300">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakaria Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 px-6 py-4 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-around items-center">
+      <a href="index.html" class="font-bold text-3xl">Zakaria Elmi</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-10 font-normal text-xl text-black dark:text-white">
+        <li><a href="#about" class="hover:text-gray-400 transition">About</a></li>
+        <li><a href="#experience" class="hover:text-gray-400 transition">Experience</a></li>
+        <li><a href="#projects" class="hover:text-gray-400 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-gray-400 transition">Contact</a></li>
+      </ul>
+
+      <div class="flex items-center gap-4">
+        <a href="#contact" class="text-2xl hover:text-gray-400 transition hidden md:block">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <!-- Dark Mode Toggle -->
+        <button id="dark-toggle" class="text-2xl focus:outline-none">
+          <i id="dark-icon" class="fa-solid fa-moon"></i>
+        </button>
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="relative w-8 h-8 focus:outline-none">
+            <span class="absolute top-0 left-0 h-0.5 w-full bg-black dark:bg-white transition" id="bar1"></span>
+            <span class="absolute top-2 left-0 h-0.5 w-full bg-black dark:bg-white transition" id="bar2"></span>
+            <span class="absolute top-4 left-0 h-0.5 w-full bg-black dark:bg-white transition" id="bar3"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-6 mt-4 text-lg text-black dark:text-white pb-4">
+      <li><a href="#about" class="hover:text-gray-400 transition">About</a></li>
+      <li><a href="#experience" class="hover:text-gray-400 transition">Experience</a></li>
+      <li><a href="#projects" class="hover:text-gray-400 transition">Projects</a></li>
+      <li><a href="#contact" class="hover:text-gray-400 transition">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16" id="index">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 justify-center items-center text-center">
+      <div class="flex justify-center">
+        <div class="w-[250px] h-[340px] rounded-full p-1 border-4 border-gray-200 dark:border-gray-700">
+          <img src="assets/zak.jpeg" class="w-full h-full rounded-full object-cover shadow-xl " alt="ZAKI">
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center md:items-start space-y-4">
+        <span class="text-gray-600 dark:text-gray-300 text-lg font-medium">Hello, I'm</span>
+        <h1 class="text-4xl md:text-5xl font-bold">Zakaria Elmi</h1>
+        <p class="text-2xl text-gray-700 dark:text-gray-300">Frontend Developer</p>
+
+        <div class="flex gap-6 mt-4">
+          <button id="download-cv"
+            class="bg-white dark:bg-gray-700 text-black dark:text-white px-6 py-2 border border-black hover:bg-gray-800 hover:text-white dark:border-white rounded-full shadow hover:bg-gray-100 dark:hover:bg-white dark:hover:text-black transition">
+            Download CV
+          </button>
+          <a href="#contact"><button
+              class="bg-white dark:bg-gray-700 text-black dark:text-white px-6 py-2 rounded-full shadow hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+              Contact Info
+            </button></a>
+        </div>
+
+        <div class="mt-6 flex gap-6 text-2xl text-gray-600 dark:text-gray-300">
+          <a href="#"><i class="fa-brands fa-github hover:text-black dark:hover:text-white transition"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook hover:text-blue-600 transition"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram hover:text-pink-500 transition"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="max-w-4xl mx-auto py-16 px-4" id="about">
+    <div class="text-center mb-8">
+      <span class="text-gray-500 dark:text-gray-400">Get to Know More</span>
+      <h1 class="text-4xl md:text-5xl font-bold">About Me</h1>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <!-- Left Image -->
+      <div class="flex justify-center">
+        <img src="assets/laki.jpeg" class="w-[300px] h-[300px] rounded-xl object-cover shadow-xl" alt="zaki">
+      </div>
+
+      <!-- Right Content -->
+      <div class="grid grid-cols-2 gap-6 ">
+        <!-- Top Boxes -->
+        <div class="rounded-md border shadow-md py-5 mx-2 px-6 border-black dark:border-white">
+          <div class="text-center">
+            <i class="fa-solid fa-award text-xl mb-2"></i>
+            <h1 class="text-black dark:text-white text-xl font-bold">Experience</h1>
+            <span>2+ Years</span>
+            <p>Frontend <br>Developer</p>
+          </div>
+        </div>
+        <div class="rounded-md border shadow-md py-5 mx-2 px-6 border-black dark:border-white">
+          <div class="text-center">
+            <i class="fa-solid fa-certificate text-xl mb-2"></i>
+            <h1 class="text-black dark:text-white text-xl font-bold">Education</h1>
+            <span>B.Sc. Bachelors <br> Degree</span>
+            <p>F S D at Dugsiiye</p>
+          </div>
+        </div>
+
+        <!-- Bottom Full Text -->
+        <p class="col-span-2 text-gray-700 dark:text-gray-300 p-2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et deleniti ipsa, dolorum vitae provident mollitia
+          consequatur tempore quasi nam tempora molestias sed repellendus praesentium officiis iure ratione odit labore
+          vero.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="max-w-4xl mx-auto py-16 px-4" id="experience">
+    <div class="text-center mb-8">
+      <span class="text-gray-500 dark:text-gray-400 uppercase tracking-wide">Explore My</span>
+      <h1 class="text-4xl md:text-5xl font-bold">Experience</h1>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Left Box -->
+      <div class="rounded-lg border border-black dark:border-white shadow-md p-6">
+        <h2 class="text-center text-black dark:text-white text-xl font-bold mb-8">Frontend Development</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-green-600"></i>
+            <div>
+              <span class="font-bold">HTML</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm">Experienced</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-green-600"></i>
+            <div>
+              <span class="font-bold">CSS</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm">Experienced</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-green-600"></i>
+            <div>
+              <span class="font-bold">JavaScript</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm">Intermediate</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-green-600"></i>
+            <div>
+              <span class="font-bold">React</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm">Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Box -->
+      <div class="rounded-lg border border-black dark:border-white shadow-md p-6">
+        <h2 class="text-center text-black dark:text-white text-xl font-bold mb-8">Backend Development</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-green-600"></i>
+            <div>
+              <span class="font-bold">Node.js</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm">Basic</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-green-600"></i>
+            <div>
+              <span class="font-bold">Next js</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm">Basic</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-green-600"></i>
+            <div>
+              <span class="font-bold">Express</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm">Basic</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-green-600"></i>
+            <div>
+              <span class="font-bold">MongoDB</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm">Basic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="max-w-4xl mx-auto py-16 px-4" id="projects">
+    <div class="text-center mb-8">
+      <span class="text-gray-500 dark:text-gray-400 uppercase tracking-wide">Browse My Recent</span>
+      <h1 class="text-4xl md:text-5xl font-bold">Projects</h1>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Project 1 -->
+      <div class="rounded-lg border border-black dark:border-white shadow-md p-6">
+        <img
+          src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          alt="Project 1" class="w-full h-48 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-bold mb-2">E-commerce Website</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">A fully responsive e-commerce platform built with React and
+          Node.js.</p>
+        <div class="flex gap-4">
+          <a href="#" class="text-blue-600 hover:underline">Github</a>
+          <a href="#" class="text-blue-600 hover:underline">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="rounded-lg border border-black dark:border-white shadow-md p-6">
+        <img
+          src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+          alt="Project 2" class="w-full h-48 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">A personal portfolio website with dark mode functionality.</p>
+        <div class="flex gap-4">
+          <a href="#" class="text-blue-600 hover:underline">Github</a>
+          <a href="#" class="text-blue-600 hover:underline">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="max-w-4xl mx-auto py-16 px-4" id="contact">
+    <div class="text-center mb-8">
+      <span class="text-gray-500 dark:text-gray-400 uppercase tracking-wide">Get in Touch</span>
+      <h1 class="text-4xl md:text-5xl font-bold">Contact Me</h1>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Contact Information -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+            <i class="fa-solid fa-envelope text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-bold">Email</h3>
+            <p class="text-gray-700 dark:text-gray-300">zakaria@example.com</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+            <i class="fa-solid fa-phone text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-bold">Phone</h3>
+            <p class="text-gray-700 dark:text-gray-300">+123 456 7890</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+            <i class="fa-solid fa-location-dot text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-bold">Location</h3>
+            <p class="text-gray-700 dark:text-gray-300">Hargeisa, Somaliland</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block mb-1">Name</label>
+            <input type="text" id="name"
+              class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-700">
+          </div>
+          <div>
+            <label for="email" class="block mb-1">Email</label>
+            <input type="email" id="email"
+              class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-700">
+          </div>
+          <div>
+            <label for="message" class="block mb-1">Message</label>
+            <textarea id="message" rows="4"
+              class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-700"></textarea>
+          </div>
+          <button type="submit"
+            class="bg-black dark:bg-white text-white dark:text-black px-6 py-2 rounded-full shadow hover:bg-gray-800 dark:hover:bg-gray-200 transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="muted">©
+        <script>document.write(new Date().getFullYear())</script> Zakaria Elmi. All rights reserved.
+      </p>
+      <div class="mt-4 flex justify-center gap-6 text-2xl text-gray-600 dark:text-gray-300">
+        <a href="#"><i class="fa-brands fa-github hover:text-black dark:hover:text-white transition"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook hover:text-blue-600 transition"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram hover:text-pink-500 transition"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin hover:text-blue-500 transition"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const darkToggle = document.getElementById('dark-toggle');
+    const darkIcon = document.getElementById('dark-icon');
+    const htmlElement = document.documentElement;
+
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      htmlElement.classList.add('dark');
+      darkIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    darkToggle.addEventListener('click', () => {
+      htmlElement.classList.toggle('dark');
+      if (htmlElement.classList.contains('dark')) {
+        localStorage.theme = 'dark';
+        darkIcon.classList.replace('fa-moon', 'fa-sun');
+      } else {
+        localStorage.theme = 'light';
+        darkIcon.classList.replace('fa-sun', 'fa-moon');
+      }
+    });
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bars = document.querySelectorAll('#menu-btn span');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      bars[0].classList.toggle('rotate-45');
+      bars[0].classList.toggle('top-2');
+      bars[1].classList.toggle('opacity-0');
+      bars[2].classList.toggle('-rotate-45');
+      bars[2].classList.toggle('top-2');
+    });
+
+    // Open CV in new tab
+    document.getElementById('download-cv').addEventListener('click', function () {
+      window.open('zaki.pdf', '_blank');
+    });
+  </script>
+
+</body>
+
+</html>
